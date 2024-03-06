@@ -12,7 +12,7 @@ html {
 
 html,
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .space {
@@ -348,15 +348,17 @@ a {
     height: 534px;
     background: #FAFAFA 0% 0% no-repeat padding-box;
     opacity: 1;
-    transform: translateY(125px);
+    margin-top: 120px;
+    width: 100%;
 }
 
 .top-selling .container {
     transform: translateY(30px);
     position: relative;
+    width: 100%;
 }
 
-.top-selling .container h1 {
+.top-selling .container .grid-selling .top-selling .container h1 {
     text-align: left;
     font: normal normal bold 30px/46px Poppins;
     letter-spacing: 0px;
@@ -364,6 +366,11 @@ a {
     opacity: 1;
 }
 
+.top-selling .container .grid-selling {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+}
 
 
 .product img {
@@ -451,7 +458,6 @@ a {
 }
 
 footer {
-    transform: translateY(126px);
     height: 190px;
     background: #E8E8E8 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -461,7 +467,7 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(80%) translateX(-40px);
+    transform: translateY(75%) translateX(-40px);
     gap: 90px;
 }
 
@@ -471,8 +477,9 @@ footer .container .sec2 ul li {
     color: #0A0A0A;
     opacity: 1;
 }
-footer .container .grid-selling {
 
+footer .container .sec3 ul {
+    width: 91px;
 }
 
 footer .container .sec4 p {
@@ -627,7 +634,7 @@ footer .container .sec5 p {
 
 .filter-price .container3 {
     margin-left: 115px !important;
-    margin-right: 111px !important;
+    margin-right: 90px !important;
 }
 
 
