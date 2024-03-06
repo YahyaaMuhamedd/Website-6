@@ -456,7 +456,7 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(80%) translateX(-40px);
+    transform: translateY(20%) translateX(5px);
     gap: 90px;
 }
 
@@ -466,7 +466,9 @@ footer .container .sec2 ul li {
     color: #0A0A0A;
     opacity: 1;
 }
-
+footer .container .sec3 ul {
+    width: 91px;
+}
 footer .container .sec4 p {
     font-size: 14px;
     padding-bottom: 15px;
