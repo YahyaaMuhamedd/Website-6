@@ -456,7 +456,7 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(20%) translateX(5px);
+    transform: translateY(55%) translateX(5px);
     gap: 90px;
 }
 
