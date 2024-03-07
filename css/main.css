@@ -10,10 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
 
 .space {
     display: flex;
@@ -22,11 +18,24 @@ body {
 
 img {
     border-radius: 5px;
+    max-width: 100%;
 }
+
 
 .container {
     margin-left: 195px;
     margin-right: 113px;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        margin-left: 133px;
+    }
+
+    .container2 {
+        margin-left: 133px;
+
+    }
 }
 
 .center {
@@ -297,20 +306,20 @@ a {
     margin-right: 13px;
 }
 
-.container2 {
-    margin-left: 195px;
-    margin-right: 113px;
+.web-text .container {
     height: 65vh;
     display: flex;
-    transform: translateY(50px);
+    transform: translateY(90px);
 }
 
-.container2 .text {
-    transform: translateY(70px);
+.web-text .text {
+    transform: translateY(-20px);
 
 }
 
-.container2 .text h1 {
+.web-text .image {}
+
+.web-text .text h1 {
     text-align: left;
     font: normal normal bold 30px/46px Poppins;
     letter-spacing: 0px;
@@ -320,7 +329,7 @@ a {
     font-size: 40px;
 }
 
-.container2 .text p {
+.web-text .text p {
     width: 449px;
     text-align: left;
     font: normal normal 300 17px/26px Poppins;
@@ -333,7 +342,7 @@ a {
     margin-right: 80px;
 }
 
-.container2 .text button {
+.web-text .text button {
     width: 108px;
     height: 36px;
     background: #0A0A0A 0% 0% no-repeat padding-box;
@@ -349,13 +358,11 @@ a {
     background: #FAFAFA 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-top: 120px;
-    width: 100%;
 }
 
 .top-selling .container {
     transform: translateY(30px);
     position: relative;
-    width: 100%;
 }
 
 .top-selling .container .grid-selling .top-selling .container h1 {
@@ -370,8 +377,14 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 5px;
+    width: 1189px;
 }
 
+@media screen and (max-width: 1300px) {
+    .top-selling .container .grid-selling {
+        width: 1090px;
+    }
+}
 
 .product img {
     transform: translateX(-8px);
@@ -379,6 +392,8 @@ a {
 
 .product {
     position: relative;
+    width: fit-content;
+    margin-right: 15px;
 }
 
 .product .love {
@@ -428,6 +443,7 @@ a {
     opacity: 1;
     text-align: center;
     top: -10px;
+    z-index: 555;
 }
 
 .sale p {
@@ -467,8 +483,14 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(75%) translateX(-40px);
+    transform: translateY(75%) translateX(-30px);
     gap: 90px;
+}
+
+@media screen and (max-width:1300px) {
+    footer .container {
+        transform: translateY(75%) translateX(0px);
+    }
 }
 
 footer .container .sec2 ul li {
@@ -838,8 +860,7 @@ footer .container .sec5 p {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     row-gap: 77px;
     padding-top: 19px;
-    width: fit-content;
-    width: 94%;
+    width: 95%;
 }
 
 .filter-price .container3 .product-ca .grid-selling .load-more {
