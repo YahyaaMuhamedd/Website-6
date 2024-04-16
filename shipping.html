@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store - Cart Page</title>
+    <meta name="description" content=" All Information about the Store are here ">
+    <meta name="keywords" content=" AboutUS,Store,Homepage">
+    <link rel="stylesheet" href="css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="popup-layer">
+
+    </div>
+    <!-- Start NavBar -->
+    <div class="nav-bar mb-5">
+        <div class="nav-section1">
+            <img src="img/Group 3927.png" alt="Logo" loading="lazy">
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoery.html">Product <i class="icon ionic-ios-arrow-down"></i></a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-section2">
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <div class="icons">
+                <img src="img/Icon feather-shopping-cart.png" alt="icon" loading="lazy">
+                <img src="img/Icon material-language.png" alt="icon" loading="lazy">
+                <img src="img/Icon feather-log-in.png" alt="icon" loading="lazy" style="cursor: pointer;" id="appear">
+            </div>
+        </div>
+    </div>
+    <!-- End NavBar -->
+    <!-- Form -->
+    <div class="popup-form">
+        <div class="close">
+            <span class="x"></span>
+            <span class="y"></span>
+        </div>
+        <div class="container-login">
+            <div class="form-container">
+                <form id="login-form" class="form ">
+                    <h2>Login Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <div class=" space">
+                        <div class="check">
+                            <input type="checkbox" name="remember" id="remember"> Remember me
+                        </div>
+                        <a href="" style="text-decoration: underline; color: #909090;">Forget
+                            password</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <label for="signup-tab" id="click-sign">Dont have account?<a
+                            style="text-decoration: underline;">Sign Up</a></label>
+                </form>
+                <form id="signup-form" class="form non">
+                    <h2>Sign Up Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <input type="password" placeholder="Confirm Password" required class="ay-haga">
+                    <button type="submit" id="sign-remove"></button>
+                    <label for="login-tab" id="login-tab"> Login In</label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Form -->
+
+    <div class="d-flex container mt-5 pt-5">
+        <div class="shipping-method me-5 form-floating">
+            <div class="order-progress d-flex">
+                <div class="balls">
+                    <p>Cart</p>
+                </div>
+                <div class="lines1"></div>
+                <div class="balls">
+                    <p>Address</p>
+                </div>
+                <div class="lines2"></div>
+                <div class="balls2">
+                    <p style="left: -22px;">Payment</p>
+                </div>
+                <div class="lines2"></div>
+                <div class="balls2 me-4">
+                    <p style="left: -26px; ">Complete</p>
+                </div>
+            </div>
+            <p class="meth ">Your shipping method</p>
+            <div class="d-flex mt-4 pb-4" style="border-bottom: 2px solid #C9C9C9">
+                <div class="balls2 me-3 mt-1" style="border: 1px solid black;"></div>
+                <p>Pickup From Store <b>(Free)</b></p>
+            </div>
+            <div class="d-flex mt-4">
+                <div class="balls2 me-3 mt-1" style="border: 1px solid black;"></div>
+                <p>Home delivery</p>
+                <select name="" id="" class="ms-4 select-ship" aria-placeholder="select Shipping">
+                    <option value=""> Select Shipping</option>
+                </select>
+            </div>
+            <div class="addresses mt-4">
+                <h4>Your address</h4>
+                <div class="adresses-flex mt-3">
+                    <div class="ps-3 pe-3 d-flex justify-content-center align-items-center">
+                        <p>37 Soliman abaza,<br> Elmohndsen ,<br> Giza,<br> Egypt</p>
+                    </div>
+                    <div class="ps-3 pe-3 d-flex justify-content-center align-items-center">
+                        <p>37 Soliman abaza,<br> Elmohndsen ,<br> Giza,<br> Egypt</p>
+                    </div>
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <p style="font-size: 65px; color: #0A0A0A;">+</p>
+                    </div>
+                </div>
+            </div>
+            <a href="payment.html" class="text-decoration-none d-flex justify-content-end mt-5 position-absolute"
+                style="color: #0A0A0A; right: 0;">
+                <b>
+                    <p class="" style="font-size: 18px;">Next
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-arrow-right  ms-1 fw-bold" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg>
+                    </p>
+                </b>
+            </a>
+        </div>
+        <div class="order">
+            <br>
+            <br>
+            <br>
+            <div class="summary ms-5 me-5 mt-5">
+                <h1>order summary</h1>
+                <div class="d-flex justify-content-between mt-4">
+                    <p style="font-size: 14px;"> 2 ITEMS</p>
+                    <p style="font-size: 14px;">EGP 2,948.00</p>
+                </div>
+                <div class="d-flex justify-content-between mt-2 pb-4" style="border-bottom: 2px solid #C9C9C9">
+                    <p style="font-size: 14px;"> SHIPPING </p>
+                    <p style="font-size: 14px;">EGP 0.00</p>
+                </div>
+                <div class="d-flex justify-content-between mt-3 pb-3" style="border-bottom: 2px solid #C9C9C9">
+                    <p style="font-size: 14px;"> SUB-TOTAL</p>
+                    <p style="font-size: 14px;">EGP 2,948.00</p>
+                </div>
+                <div class="d-flex justify-content-between mt-3 mb-5">
+                    <p style="font-size: 14px;"> <b>TOTAL</b></p>
+                    <p style="font-size: 14px;"><b>EGP 2,948.00</b></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

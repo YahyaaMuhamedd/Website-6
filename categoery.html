@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Store - Product Page</title>
+    <meta name="description" content=" This is a product Page ">
+    <meta name="keywords" content=" Product,Store,Homepage">
+    <!-- Render All Elements Normally -->
+    <link rel=" stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="popup-layer">
+
+    </div>
+    <!-- Start NavBar -->
+    <div class="nav-bar">
+        <div class="nav-section1">
+            <img src="img/Group 3927.png" alt="Logo" loading="lazy">
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoery.html">Product <i class="icon ionic-ios-arrow-down"></i></a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-section2">
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <div class="icons">
+                <img src="img/Icon feather-shopping-cart.png" alt="icon" loading="lazy">
+                <img src="img/Icon material-language.png" alt="icon" loading="lazy">
+                <img src="img/Icon feather-log-in.png" alt="icon" loading="lazy" style="cursor: pointer;" id="appear">
+            </div>
+        </div>
+    </div>
+    <!-- End NavBar -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="popup-form">
+        <div class="close">
+            <span class="x"></span>
+            <span class="y"></span>
+        </div>
+        <div class="container-login">
+            <div class="form-container">
+                <form id="login-form" class="form ">
+                    <h2>Login Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <div class=" space">
+                        <div class="check">
+                            <input type="checkbox" name="remember" id="remember"> Remember me
+                        </div>
+                        <a href="" style="text-decoration: underline; color: #909090;">Forget
+                            password</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <label for="signup-tab" id="click-sign">Dont have account?<a
+                            style="text-decoration: underline;">Sign Up</a></label>
+                </form>
+                <form id="signup-form" class="form non">
+                    <h2>Sign Up Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <input type="password" placeholder="Confirm Password" required class="ay-haga">
+                    <button type="submit" id="sign-remove"></button>
+                    <label for="login-tab" id="login-tab"> Login In</label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------- -->
+    <div class="filter-price">
+        <div class="container3">
+            <h1>Categoery name</h1>
+            <div class="flex">
+
+                <ul class="price">
+                    <li class="first-li">
+                        <div class="space">
+                            <h4>Filter by </h4>
+                            <span>--</span>
+                        </div>
+                    </li>
+                    <li class="second-li">
+                        <div class="price-range">
+                            <p>Price Range</p>
+                            <div class="space range">
+                                <div class="from">
+                                    <p>From</p>
+                                    <input type="number" name="Num" id="Num" placeholder="20">
+                                </div>
+                                <div class="to">
+                                    <p>To</p>
+                                    <input type="number" name="Num" id="Num" placeholder="500">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+
+                            <input type="range" class="input-range">
+                        </div>
+                        <button type="submit" class="btn-apply">Apply</button>
+                    </li>
+                    <li class="second-li">
+                        <br>
+                        <div class="flex">
+                            <input type="checkbox" name="chech" id="check">
+                            <p> On Sale</p>
+                        </div>
+                    </li>
+                    <li class="second-li">
+                        <p>Color</p>
+                    </li>
+                    <li class="last-li">
+                        <p>Gender</p>
+                        <input type="checkbox" name="" id=""> Men <br>
+                        <input type="checkbox" name="" id=""> Women<br>
+                        <input type="checkbox" name="" id=""> Unisex<br>
+                    </li>
+                </ul>
+                <div class="product-ca">
+                    <div class="space">
+                        <div class="men">
+                            <p>Men</p>
+                            <div class="xx">
+
+                                <span class="x"></span>
+                                <span class="y"></span>
+                            </div>
+                        </div>
+                        <div class="reset-sort">
+                            <button>Reset</button>
+                            <select name="Sorty by" id="">
+                                <option value="">Sort by</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid-selling ">
+                        <div class="product">
+                            <a href="buy.html">
+                                <img src="img/Image.png" alt="img">
+                            </a>
+                            <img src="img/Component 217.png" alt="img" class="love">
+                            <span class="sale">
+                                <p>Sale 20%</p>
+                            </span>
+                            <h4>Product name</h4>
+                            <div class="price flex">
+                                <span class="p-1">EGP 3,495 </span>
+                                <span class="p-2">EGP 5,405</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="buy.html">
+                                <img src="img/Image-1.png" alt="img">
+                            </a>
+                            <img src="img/Component 217.png" alt="img" class="love">
+                            <h4>Product name</h4>
+                            <div class="price flex">
+                                <span class="p-1" style="color: #0A0A0A; font-weight: bold;">EGP 3,495 </span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="buy.html">
+                                <img src="img/Image-2.png" alt="img">
+                            </a>
+                            <img src="img/Component 217.png" alt="img" class="love">
+                            <h4>Product name</h4>
+                            <div class="price flex">
+                                <span class="p-1" style="color: #0A0A0A; font-weight: bold;">EGP 3,495 </span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="buy.html">
+                                <img src="img/Image.png" alt="img">
+                            </a>
+                            <img src="img/Component 217.png" alt="img" class="love">
+                            <span class="sale">
+                                <p>Sale 20%</p>
+                            </span>
+                            <h4>Product name</h4>
+                            <div class="price flex">
+                                <span class="p-1">EGP 3,495 </span>
+                                <span class="p-2">EGP 5,405</span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="buy.html">
+                                <img src="img/Image-1.png" alt="img">
+                            </a>
+                            <img src="img/Component 217.png" alt="img" class="love">
+                            <h4>Product name</h4>
+                            <div class="price flex">
+                                <span class="p-1" style="color: #0A0A0A; font-weight: bold;">EGP 3,495 </span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="buy.html">
+                                <img src="img/Image-2.png" alt="img">
+                            </a>
+                            <img src="img/Component 217.png" alt="img" class="love">
+                            <h4>Product name</h4>
+                            <div class="price flex">
+                                <span class="p-1" style="color: #0A0A0A; font-weight: bold;">EGP 3,495 </span>
+                            </div>
+
+                        </div>
+                        <button class="load-more ">Load More</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container grid">
+            <div class="sec1">
+                <img src="img/Group 3929.png" alt="Img">
+            </div>
+            <div class="sec2">
+                <ul>
+                    <li>Contact</li>
+                    <li>About Us</li>
+                    <li>Terms & Condition</li>
+                </ul>
+            </div>
+            <div class="sec3">
+                <ul>
+                    <li style="transform: translateX(4px);"><img src="img/Path 38.png" alt="Logo"> Facebook</li>
+                    <li><img src="img/Path 39.png" alt="Logo"> Twiiter</li>
+                    <li><img src="img/Path 40.png" alt="Logo"> Instgram</li>
+                </ul>
+            </div>
+            <div class="sec4">
+                <p>Subscribe to our news letter</p>
+                <div class="flex">
+                    <input type="email" name="email" placeholder=" Email Address">
+                    <button>OK</button>
+                </div>
+            </div>
+            <div class="sec5 ">
+                <p>497 Evergreen Rd. Rosevila, CA 95673</p>
+                <p>+44 345 678 903</p>
+                <p>adobecd@mail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
