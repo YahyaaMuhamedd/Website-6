@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store - Cart Page</title>
+    <meta name="description" content=" All Information about the Store are here ">
+    <meta name="keywords" content=" AboutUS,Store,Homepage">
+    <link rel="stylesheet" href="css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="popup-layer">
+
+    </div>
+    <!-- Start NavBar -->
+    <div class="nav-bar mb-5">
+        <div class="nav-section1">
+            <img src="img/Group 3927.png" alt="Logo" loading="lazy">
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoery.html">Product <i class="icon ionic-ios-arrow-down"></i></a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-section2">
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <div class="icons">
+                <img src="img/Icon feather-shopping-cart.png" alt="icon" loading="lazy">
+                <img src="img/Icon material-language.png" alt="icon" loading="lazy">
+                <img src="img/Icon feather-log-in.png" alt="icon" loading="lazy" style="cursor: pointer;" id="appear">
+            </div>
+        </div>
+    </div>
+    <!-- End NavBar -->
+    <!-- Form -->
+    <div class="popup-form">
+        <div class="close">
+            <span class="x"></span>
+            <span class="y"></span>
+        </div>
+        <div class="container-login">
+            <div class="form-container">
+                <form id="login-form" class="form ">
+                    <h2>Login Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <div class=" space">
+                        <div class="check">
+                            <input type="checkbox" name="remember" id="remember"> Remember me
+                        </div>
+                        <a href="" style="text-decoration: underline; color: #909090;">Forget
+                            password</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <label for="signup-tab" id="click-sign">Dont have account?<a
+                            style="text-decoration: underline;">Sign Up</a></label>
+                </form>
+                <form id="signup-form" class="form non">
+                    <h2>Sign Up Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <input type="password" placeholder="Confirm Password" required class="ay-haga">
+                    <button type="submit" id="sign-remove"></button>
+                    <label for="login-tab" id="login-tab"> Login In</label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Form -->
+    <!-- Cart -->
+
+    <div class="d-flex container mt-5 pt-5">
+        <div class="bag me-5">
+            <h2>your bag</h2>
+            <p>Total (2 item) <b>EGP 2,948.00</b></p>
+            <div class="added d-flex pe-2 ps-2 pt-3 pb-3 mb-3">
+                <img src="img/Group 413.png" alt="Shoes added to cart">
+                <div class="info ps-3">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-2">Nike Air Max 270</h3>
+                        <div class="close">
+                            <span class="x"></span>
+                            <span class="y"></span>
+                        </div>
+                    </div>
+                    <p>Size : XL</p>
+                    <div class=" d-flex justify-content-between">
+                        <p>Color : Red</p>
+                        <div class="in-p">
+                            <p class="in-p-1">EGP 3,495</p>
+                            <p class="in-p-2">EGP 5,495</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <img src="img/Icon feather-edit-3.svg" alt="icon">
+                        <div class="counter d-flex justify-content-between align-items-center">
+                            <button class="decrease"> - </button>
+                            <p class="number"> 1 </p>
+                            <button class="increase"> + </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="added d-flex pe-2 ps-2 pt-3 pb-3 mb-3">
+                <img src="img/Group 413.png" alt="Shoes added to cart">
+                <div class="info ps-3">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-2">Nike Air Max 270</h3>
+                        <div class="close">
+                            <span class="x"></span>
+                            <span class="y"></span>
+                        </div>
+                    </div>
+                    <p>Size : XL</p>
+                    <div class=" d-flex justify-content-between">
+                        <p>Color : Red</p>
+                        <div class="in-p">
+                            <p class="in-p-1">EGP 3,495</p>
+                            <p class="in-p-2">EGP 5,495</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <img src="img/Icon feather-edit-3.svg" alt="icon">
+                        <div class="counter d-flex justify-content-between align-items-center">
+                            <button class="decrease"> - </button>
+                            <p class="number"> 1 </p>
+                            <button class="increase"> + </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="added d-flex pe-2 ps-2 pt-3 pb-3 mb-3">
+                <img src="img/Group 413.png" alt="Shoes added to cart">
+                <div class="info ps-3">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-2">Nike Air Max 270</h3>
+                        <div class="close">
+                            <span class="x"></span>
+                            <span class="y"></span>
+                        </div>
+                    </div>
+                    <p>Size : XL</p>
+                    <div class=" d-flex justify-content-between">
+                        <p>Color : Red</p>
+                        <div class="in-p">
+                            <p class="in-p-1">EGP 3,495</p>
+                            <p class="in-p-2">EGP 5,495</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <img src="img/Icon feather-edit-3.svg" alt="icon">
+                        <div class="counter d-flex justify-content-between align-items-center">
+                            <button class="decrease"> - </button>
+                            <p class="number"> 1 </p>
+                            <button class="increase"> + </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order">
+            <div class="promo-code ms-5 me-5 d-flex mb-5">
+                <input type="text" placeholder="  Promo Code">
+                <button> Apply </button>
+            </div>
+            <div class="summary ms-5 me-5 ">
+                <h1>order summary</h1>
+                <div class="d-flex justify-content-between mt-4">
+                    <p style="font-size: 14px;"> 2 ITEMS</p>
+                    <p style="font-size: 14px;">EGP 2,948.00</p>
+                </div>
+                <div class="d-flex justify-content-between mt-2 pb-4" style="border-bottom: 2px solid #C9C9C9">
+                    <p style="font-size: 14px;"> SHIPPING </p>
+                    <p style="font-size: 14px;">EGP 0.00</p>
+                </div>
+                <div class="d-flex justify-content-between mt-3 pb-3" style="border-bottom: 2px solid #C9C9C9">
+                    <p style="font-size: 14px;"> SUB-TOTAL</p>
+                    <p style="font-size: 14px;">EGP 2,948.00</p>
+                </div>
+                <div class="d-flex justify-content-between mt-3 mb-5">
+                    <p style="font-size: 14px;"> <b>TOTAL</b></p>
+                    <p style="font-size: 14px;"><b>EGP 2,948.00</b></p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="shipping.html"><button class="checkout">
+                            Check out
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Cart -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

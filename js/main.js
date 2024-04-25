@@ -14,6 +14,20 @@ let popaddress = document.querySelector('.popup-address')
 let closeadd = document.querySelector('.closing')
 let btnsave = document.querySelector('.btn-save')
 
+let navbar = document.querySelector(".nav-bar");
+let header = document.querySelector(".header");
+
+window.onscroll = function () {
+    if (window.scrollY >= header.offsetTop + 45) {
+        console.log('a7a');
+        navbar.style.position = 'sticky'
+        navbar.classList.add("anim")
+    } else {
+        navbar.style.position = 'relative'
+        navbar.classList.remove("anim")
+
+    }
+}
 
 popup.onclick = function () {
     popupform.classList.add('active')
@@ -93,4 +107,6 @@ btnsave.onclick = function () {
     popaddress.style.display = 'none'
     popupColor1.style.display = 'none'
 }
+
+
 

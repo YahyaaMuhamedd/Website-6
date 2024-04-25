@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store - Cart Page</title>
+    <meta name="description" content=" All Information about the Store are here ">
+    <meta name="keywords" content=" AboutUS,Store,Homepage">
+    <link rel="stylesheet" href="css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="popup-layer">
+
+    </div>
+    <div class="popup-layer1">
+
+    </div>
+    <!-- Start NavBar -->
+    <div class="nav-bar mb-5">
+        <div class="nav-section1">
+            <img src="img/Group 3927.png" alt="Logo" loading="lazy">
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoery.html">Product <i class="icon ionic-ios-arrow-down"></i></a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-section2">
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <div class="icons">
+                <img src="img/Icon feather-shopping-cart.png" alt="icon" loading="lazy">
+                <img src="img/Icon material-language.png" alt="icon" loading="lazy">
+                <img src="img/Icon feather-log-in.png" alt="icon" loading="lazy" style="cursor: pointer;" id="appear">
+            </div>
+        </div>
+    </div>
+    <!-- End NavBar -->
+    <!-- Form -->
+    <div class="popup-form">
+        <div class="close">
+            <span class="x"></span>
+            <span class="y"></span>
+        </div>
+        <div class="container-login">
+            <div class="form-container">
+                <form id="login-form" class="form ">
+                    <h2>Login Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <div class=" space">
+                        <div class="check">
+                            <input type="checkbox" name="remember" id="remember"> Remember me
+                        </div>
+                        <a href="" style="text-decoration: underline; color: #909090;">Forget
+                            password</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <label for="signup-tab" id="click-sign">Dont have account?<a
+                            style="text-decoration: underline;">Sign Up</a></label>
+                </form>
+                <form id="signup-form" class="form non">
+                    <h2>Sign Up Form</h2>
+                    <input type="text" placeholder="Email" required class="ay-haga">
+                    <input type="password" placeholder="Password" required class="ay-haga">
+                    <input type="password" placeholder="Confirm Password" required class="ay-haga">
+                    <button type="submit" id="sign-remove"></button>
+                    <label for="login-tab" id="login-tab"> Login In</label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Form -->
+
+    <div class="d-flex container mt-5">
+        <div class="my-order me-5">
+            <br>
+            <br>
+            <br>
+            <div class="summary ms-5 me-5 mt-5 ">
+                <div class="d-flex justify-content-center flex-column align-items-center mail-ph">
+                    <img src="img/Group 413.png" width="76px" height="76px" class="rounded-circle mb-2" alt="">
+                    <p>User name</p>
+                    <p>exmple@email.com</p>
+                </div>
+                <div class="d-flex justify-content-start mt-5 orders-p">
+                    <a href="orders.html">
+
+                        <p style="font-size: 15px;"> My Orders</p>
+                    </a>
+
+                </div>
+                <div class="d-flex justify-content-between orders-p fw-bold">
+                    <a href="adresses.html">
+
+                        <p style="font-size: 15px;"> Addresses</p>
+                    </a>
+
+                </div>
+                <div class="d-flex justify-content-between orders-p">
+                    <a href="contactdetail.html">
+                        <p style="font-size: 15px;"> Contact details</p>
+                    </a>
+
+                </div>
+                <div class="d-flex justify-content-between orders-p">
+                    <a href="changepass.html">
+
+                        <p style="font-size: 15px;">Change Password</p>
+                    </a>
+
+                </div>
+                <div class="d-flex justify-content-between orders-p mb-5">
+                    <a href="wish.html">
+
+                        <p style="font-size: 15px;">Wish List</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="logout mt-5 d-flex justify-content-end me-4">
+                <a href="index.html" class="text-black mt-5">
+                    Logout <img src="img/Icon feather-log-in.png" alt="Icon" class="ms-2">
+                </a>
+            </div>
+        </div>
+
+        <div class="order-stc mt-5 pt-4 ps-2 d-flex flex-column ms-5">
+            <div class="addresses mt-4">
+                <h4>Your address</h4>
+                <div class="adresses-flex mt-3">
+                    <div class="ps-3 pe-3 d-flex justify-content-center align-items-center">
+                        <p>37 Soliman abaza,<br> Elmohndsen ,<br> Giza,<br> Egypt</p>
+                    </div>
+                    <div class="ps-3 pe-3 d-flex justify-content-center align-items-center">
+                        <p>37 Soliman abaza,<br> Elmohndsen ,<br> Giza,<br> Egypt</p>
+                    </div>
+                    <div class=" d-flex justify-content-center align-items-center" style="cursor: pointer;"
+                        id="adress-pop">
+                        <p style="font-size: 65px; color: #0A0A0A;">+</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <div class="popup-address">
+        <div class="closing mt-4 pe-5 end-0 position-absolute ">
+            <span class="x"></span>
+            <span class="y"></span>
+        </div>
+        <div class="pt-5 ps-3 pe-3 pb-5 address-new">
+            <h1 class="d-flex justify-content-center mb-5">New address</h1>
+            <input type="text" placeholder="Street no./name">
+            <div class="d-flex gap-4 mt-4 basis mb-4">
+                <input type="text" placeholder="Building no.">
+                <input type="text" placeholder="Floor (OPt)">
+                <input type="text" placeholder="Apartments">
+            </div>
+            <input type="number" placeholder="Phone number" class="mb-4">
+            <input type="text" style="height: 104px;" placeholder="Comment">
+            <div class="mt-4 d-flex justify-content-center">
+
+                <button class="btn-save ">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
